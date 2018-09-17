@@ -1,0 +1,279 @@
+\documentclass[9pt]{memoir}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref,mdframed,color}
+
+\newcommand{\link}[2]{\href{#1}{\color{blue} \underline{\smash{#2}}}}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+\large \textbf{Gregory Meyer}
+\end{center}
+
+\begin{center}
+\small
+\begin{tabular}[h]{c|c|c|c}
+
+\link{mailto:gregjm@umich.edu}{gregjm@umich.edu} &  +1 734 895 5597 & \link{https://www.linkedin.com/in/umich-gregjm/}{linkedin.com/in/umich-gregjm} & \link{https://www.github.com/Gregory-Meyer/}{github.com/Gregory-Meyer} \\
+
+\end{tabular}
+\end{center}
+
+\begin{mdframed}
+\textbf{Skills}
+\end{mdframed}
+
+\raggedright
+
+\small
+Accelerated Computing, AVX, C, C++, Celery, Computer Vision, Continuous Integration (CI), CUDA,
+Debugging, Digital Signal Processing (DSP), Embedded Systems, Git, Image Processing, JavaScript,
+Julia, Leadership, Lidar, Matlab, Message Brokering, Object Oriented Programming (OOP),
+Project Management, Python, Redis, Robot Operating System (ROS), Rust,
+Simultaneous Localization and Mapping (SLAM), SSE, Stereo Vision, Systems Analysis, Travis,
+TypeScript, Vectorization
+
+\begin{mdframed}
+\textbf{Education}
+\end{mdframed}
+
+\begin{itemize}
+
+\item
+
+\begin{tabular}[t]{lr}
+
+\begin{minipage}[t]{0.6 \textwidth}
+\raggedright
+
+\normalsize
+University of Michigan
+
+\small
+
+B.Eng. Electrical Engineering and Computer Science
+
+GPA: 3.4 (Dean's List, Honors: Winter 2017, Fall 2017)
+
+EECS 281, 351, 373, 381, 445
+\end{minipage}
+
+&
+
+\begin{minipage}[t]{0.3 \textwidth}
+\raggedleft
+
+\normalsize
+Ann Arbor, MI
+
+\small
+September 2016 - May 2020
+\end{minipage}
+
+\\
+
+\end{tabular}
+
+\item
+
+\begin{tabular}[t]{lr}
+
+\begin{minipage}[t]{0.6 \textwidth}
+\raggedright
+
+\normalsize
+Lawrence Technological University
+
+\small
+
+Dual Enrolled
+
+GPA: 3.7 (Dean Honor Roll)
+\end{minipage}
+
+&
+
+\begin{minipage}[t]{0.3 \textwidth}
+\raggedleft
+
+\normalsize
+Southfield, MI
+
+\small
+August 2015 - May 2016
+\end{minipage}
+
+\\
+
+\end{tabular}
+
+\end{itemize}
+
+\begin{mdframed}
+\textbf{Experience}
+\end{mdframed}
+
+\begin{itemize}
+
+\item
+
+\begin{tabular}[t]{lr}
+
+\begin{minipage}[t]{0.7 \textwidth}
+\raggedright
+
+\normalsize
+Team Leader, University of Michigan Intelligent Ground Vehicle
+
+\small
+
+Led team of 35 engineering and business students to compete at the Intelligent Ground Vehicle
+Competition (IGVC) at Oakland University. Ensured transfer of documentation and transfer of
+knowledge between experienced members and new recruits. Directed team relations with the
+University of Michigan, alumni, and other organizations.
+
+\end{minipage}
+
+&
+
+\begin{minipage}[t]{0.2 \textwidth}
+\raggedleft
+
+\normalsize
+Ann Arbor, MI
+
+\small
+June 2018 - Present
+\end{minipage}
+
+\\
+
+\end{tabular}
+
+\item
+
+\begin{tabular}[t]{lr}
+
+\begin{minipage}[t]{0.7 \textwidth}
+\raggedright
+
+\normalsize
+Software Intern, IBM
+
+\small
+
+Worked on QRadar Advisor with Watson (QRAW) Features and Integration team and Project Lone
+Tree intern challenge team.
+
+\begin{itemize}
+\item Created Node.js Celery distributed task queue client with Typedoc documentation, Chai/Mocha
+      unit tests, and Vagrant/Docker integration tests for 20\% performance gain over existing
+      package
+\item On Project Lone Tree, conducted consumer and market research using Enterprise Design Thinking
+      to provide market analysis and marketing strategy for business plan of proposed \$1m project.
+\end{itemize}
+
+\end{minipage}
+
+&
+
+\begin{minipage}[t]{0.2 \textwidth}
+\raggedleft
+
+\normalsize
+Sandy Springs, GA
+
+\small
+June 2018 - August 2018
+\end{minipage}
+
+\\
+
+\end{tabular}
+
+\item
+
+\begin{tabular}[t]{lr}
+
+\begin{minipage}[t]{0.7 \textwidth}
+\raggedright
+
+\normalsize
+Sensors Coordinator, University of Michigan Intelligent Ground Vehicle
+
+\small
+
+Worked to develop odometry, localization, and mapping subsytems for autonomous mobile robot
+using Robot Operating System (ROS). Integrated Velodyne VLP-16, Stereolabs ZED, Garmin GPS 18x,
+Inertial Measurement Unit (IMU), and wheel encoders for Simultaneous Localization and Mapping (SLAM).
+
+\begin{itemize}
+\item Used Google Cartographer with VLP-16 and ZED for centimeter-accurate GraphSLAM
+\item Fused IMU, wheel encoder, GPS, and visual odometry data with Unscented Kalman Filter (UKF)
+\item Developed several ROS nodes, including white line costmap layer, differential drive odometry, and GPS navigation
+\end{itemize}
+
+\end{minipage}
+
+&
+
+\begin{minipage}[t]{0.2 \textwidth}
+\raggedleft
+
+\normalsize
+Ann Arbor, MI
+
+\small
+May 2017 - June 2018
+\end{minipage}
+
+\\
+
+\end{tabular}
+\end{itemize}
+
+\begin{mdframed}
+\textbf{Projects}
+\end{mdframed}
+
+\begin{itemize}
+    \small
+
+    \item \link{https://github.com/Gregory-Meyer/strlen}{AVX2-Accelerated strlen}
+    \begin{itemize}
+        \item 10x performance gains over naive solution
+        \item 2x performance gain over glibc 2.28
+    \end{itemize}
+    \item \link{https://github.com/Gregory-Meyer/monads-cxx}{C++14 Expected and Optional Monads}
+    \item \link{https://github.com/IBM/node-celery-ts}{TypeScript Celery Client for Node.js}
+    \begin{itemize}
+        \item Typedoc documentation of all functions and modules, internal and external
+        \item 20\% message throughput increase over node-celery
+        \item Full support for Redis Sentinel, Cluster, and Socket, RPC result backend, YAML
+              serialization, zlib compression
+        \item Mocha/Chai unit tests and Vagrant/Docker automated integration tests to verify
+              functionality with Travis CI
+    \end{itemize}
+    \item Rust Thread Synchronization Primitives
+    \begin{itemize}
+        \item \link{https://github.com/Gregory-Meyer/adaptive-mutex-rs}{pthreads Adaptive Mutex}
+        \item \link{https://github.com/Gregory-Meyer/spinlock-rs}{Atomic Spinlock}
+    \end{itemize}
+    \item \link{https://github.com/umigv/ranges}{C++14 Generic Ranges Library}
+    \begin{itemize}
+        \item Curiously Recurring Template Pattern (CRTP) for generic base types
+        \item Full implementations of C++17 features like std::invoke and std::apply for C++14
+        \item SFINAE-friendly type traits using partial specialization
+    \end{itemize}
+    \item \link{https://github.com/Gregory-Meyer/update-alternatives}{Rust Implementation of update-alternatives}
+    \begin{itemize}
+        \item Use serde for JSON serialization/deserialization of alternatives
+    \end{itemize}
+\end{itemize}
+
+\end{document}
